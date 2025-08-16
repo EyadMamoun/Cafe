@@ -1,0 +1,5 @@
+@use "colors" as cv;
+
+.entire-background{
+  background-color: cv.$Background;
+}

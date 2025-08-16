@@ -1,0 +1,15 @@
+@use "colors" as cv;
+
+.description {
+  font-size: small;
+}
+
+.btn-style {
+  font-size: small;
+  background-color: cv.$text-brown;
+  color: white;
+}
+
+.card-background {
+  background-color: #fff8f2;
+}

@@ -1,0 +1,30 @@
+<div class="footer-container">
+  <div class="row">
+    <div class="col-2">
+      <span class="shop-name">Coffee Corner</span>
+    </div>
+    @for(content of footerContent; track $index){
+    <div class="col-2">
+      <div class="footer-content">
+        <span class="content-headline">{{content.headline}}</span>
+        <span class="content">{{content.content[0]}}</span>
+        <span class="content">{{content.content[1]}}</span>
+        <span class="content">{{content.content[2]}}</span>
+      </div>
+    </div>
+    }
+    <div class="col-2">
+      <span class="socialmedia-header">SOCIAL MEDIA</span>
+      <div class="socialmedia-container">
+        <div class="icon-alignment">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div class="icon-alignment">
+          <i class="fa-brands fa-x-twitter"></i>
+          <i class="fa-brands fa-whatsapp"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

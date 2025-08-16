@@ -1,0 +1,95 @@
+@use "colors" as cv;
+@use "fonts" as ft;
+@use "mixins" as mx;
+
+.background {
+  background-color: cv.$Background;
+
+  .background-img {
+    background-image: url("../../../assets/Images/pour-coffe.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    color: cv.$white-color;
+    @include mx.flex-display(row, start, center);
+  }
+
+  .slogan-position {
+    margin: 20px auto auto 70px;
+
+    .slogan-style {
+      padding: 0 35px;
+      margin-left: 50px;
+      @include mx.flex-display(column, center, start, wrap);
+
+      .slogan-text {
+        font-family: ft.$Primary-Font;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 40px;
+        margin-bottom: 15px;
+      }
+
+      .button-style {
+        width: 30%;
+        background-color: cv.$white-color;
+        padding: 10px 0;
+        border-width: 0;
+        border-radius: 50px;
+      }
+    }
+  }
+
+  .products-background {
+    background-color: cv.$white-color;
+    padding-bottom: 50px;
+
+    .products-headline {
+      text-align: center;
+      padding: 50px 0 25px 0;
+      font-size: 25px;
+      font-weight: 700;
+      color: cv.$Headlines;
+    }
+
+    .card-styling {
+      width: 75%;
+      margin: 0 auto;
+    }
+  }
+
+  .icons-container {
+    width: 75%;
+    margin: 0 auto;
+
+    .icon-card {
+      margin: 50px 0;
+      @include mx.flex-display(column);
+
+      img {
+        width: 25%;
+      }
+
+      span {
+        margin-top: 15px;
+        font-weight: bold;
+        font-size: 20px;
+        color: cv.$text-brown;
+      }
+    }
+  }
+
+  .sales-container {
+    background-color: cv.$BG-sales;
+
+    .explore-button {
+      background-color: cv.$text-brown;
+      padding: 8px 24px;
+      margin-top: 16px;
+      font-weight: 300;
+      color: cv.$white-color;
+      border-width: 0;
+      border-radius: 50px;
+    }
+  }
+}

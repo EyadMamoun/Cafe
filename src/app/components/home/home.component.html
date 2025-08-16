@@ -1,0 +1,74 @@
+<div class="background">
+  <div class="background-img">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 slogan-position">
+          <div class="slogan-style">
+            <span class="fs-4">Welcome!</span>
+            <span class="slogan-text">We serve the richest coffee in the city!</span>
+            <button class="button-style">Order Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="icons-container">
+      <div class="container">
+        <div class="row">
+          @for(icon of icons; track $index){
+          <div class="col-3 icon-card">
+            <img [src]="icon.iconImgUrl" alt="Icon">
+            <span>{{icon.iconDescription}}</span>
+          </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container products-background">
+    <div class="products-headline">
+      <span>OUR SPECIAL COFFEE</span>
+    </div>
+    <div class="card-styling">
+      <div class="row">
+        @for(product of specialCoffee; track product.id){
+        <div class="col-6 col-md-3">
+          <app-product-card [imgSrc]="product.productImg" [productName]="product.productName"
+            [productDescription]="product.productDescription" [productPrice]="product.productPrice" />
+        </div>
+        }
+      </div>
+    </div>
+    <div class="products-headline">
+      <span>OUR SPECIAL DESSERT</span>
+    </div>
+    <div class="card-styling">
+      <div class="row">
+        @for(product of specialDesserts; track product.id){
+        <div class="col-6 col-md-3">
+          <app-product-card [imgSrc]="product.productImg" [productName]="product.productName"
+            [productDescription]="product.productDescription" [productPrice]="product.productPrice" />
+        </div>
+        }
+      </div>
+    </div>
+  </div>
+
+  <div class="container sales-container">
+    <div class="row">
+      <div class="col-4 px-0 mt-3">
+        <img class="w-100" src="assets/Images/Coffee_Beans1.png" alt="">
+      </div>
+      <div class="offset-1 col-4 mt-5 pt-4">
+        <span class="fs-1 fw-bold">Check out our best coffee betans</span>
+        <button class="explore-button">Explore our products</button>
+      </div>
+      <div class="col-3 p-0">
+        <img class="w-100" src="assets/Images/Coffee_Beans.png" alt="">
+      </div>
+    </div>
+  </div>
+</div>

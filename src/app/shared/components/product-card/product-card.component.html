@@ -1,0 +1,11 @@
+<div class="border rounded p-2 card-background">
+  <img class="w-100 rounded" [src]="imgSrc" [alt]="imgAlt">
+  <div class="d-flex flex-column my-2">
+    <span class="fw-bold">{{productName}}</span>
+    <span class="description">{{productDescription}}</span>
+  </div>
+  <div class="d-flex justify-content-between align-items-center">
+    <span class="fw-bold fs-5">{{"EGP " + productPrice}}</span>
+    <button class="btn btn-style">Order Now</button>
+  </div>
+</div>

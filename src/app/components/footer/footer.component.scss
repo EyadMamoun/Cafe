@@ -1,0 +1,49 @@
+@use "colors" as cv;
+@use "fonts" as fr;
+@use "mixins" as mx;
+
+.footer-container {
+  background-color: cv.$text-brown;
+  color: cv.$text-whitesmoke;
+  padding: 50px;
+
+  .shop-name {
+    font-family: fr.$Shop-Name;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+  }
+
+  .footer-content {
+    gap: 8px;
+    @include mx.flex-display(column, center, start);
+
+    .content-headline {
+      font-size: 17px;
+    }
+
+    .content {
+      font-size: 14px;
+    }
+  }
+
+  .socialmedia-header {
+    font-size: 17px;
+  }
+
+  .socialmedia-container {
+    margin: 20px 0 0 15px;
+    gap: 17px;
+    @include mx.flex-display(column, center, start);
+
+    .icon-alignment {
+      gap: 15px;
+      @include mx.flex-display();
+
+      i {
+        font-size: 23px;
+      }
+    }
+  }
+}
