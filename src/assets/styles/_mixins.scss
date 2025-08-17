@@ -24,3 +24,12 @@
   bottom: $bottom;
   left: $left;
 }
+
+@mixin text-truncate($lines: 1) {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $lines; // Number of lines before truncation
+  text-overflow: ellipsis;
+  word-break: break-word;
+}

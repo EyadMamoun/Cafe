@@ -36,14 +36,18 @@
     }
   }
   
-  .mobile-navbar {
+  .mobile-view {
+    padding: 15px;
+    @include mx.flex-display(row, space-between, center);
+
+    .mobile-navbar {
     width: 30px;
     height: 26px;
     padding: 1px;
     border: 1px solid cv.$text-whitesmoke;
     border-radius: 3px;
     z-index: 1;
-    @include mx.position(absolute, 10px, 10px);
+    @include mx.position(absolute, 15px, 10px);
     @include mx.flex-display(column, space-evenly, center);
     
     .straight-lines {
@@ -53,12 +57,14 @@
       border-radius: 50px;
     }
   }
+  }
   .shop-name {
     font-family: fr.$Shop-Name;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     font-size: 35px;
+    color: cv.$white-color;
     @media (max-width: vr.$breakpoint-md) {
       font-size: 20px;
     }

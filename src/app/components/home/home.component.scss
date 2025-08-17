@@ -23,7 +23,7 @@
       width: 40%;
       @media (max-width: vr.$breakpoint-md) {
         width: 70%;
-        @include mx.position(absolute, 50px, auto, auto, 50px);
+        @include mx.position(absolute, 70px, auto, auto, 50px);
       }
   
       .slogan-style {
@@ -74,11 +74,17 @@
       font-size: 25px;
       font-weight: 700;
       color: cv.$Headlines;
+      @media (max-width: vr.$breakpoint-md) {
+        font-size: 20px;
+      }
     }
 
     .card-styling {
       width: 75%;
       margin: 0 auto;
+      @media (max-width: vr.$breakpoint-md) {
+      width: 90%;
+    }
     }
   }
 
@@ -92,6 +98,9 @@
 
       img {
         width: 25%;
+        @media (max-width: vr.$breakpoint-md) {
+          width: 55%;
+        }
       }
 
       span {
@@ -99,12 +108,30 @@
         font-weight: bold;
         font-size: 20px;
         color: cv.$text-brown;
+        @media (max-width: vr.$breakpoint-md) {
+          font-size: 9px;
+        }
       }
     }
   }
 
   .sales-container {
     background-color: cv.$BG-sales;
+
+    .offer-container {
+      padding-top: 24px;
+      margin-top: 48px;
+      @media (max-width: vr.$breakpoint-md) {
+      padding-top: 0;
+      margin-top: 15px;
+    }
+      .offer {
+      font-weight: 700;
+      font-size: 35px;
+      @media (max-width: vr.$breakpoint-md) {
+        font-size: 12px;
+      }
+    }
 
     .explore-button {
       background-color: cv.$text-brown;
@@ -114,6 +141,12 @@
       color: cv.$white-color;
       border-width: 0;
       border-radius: 50px;
+      @media (max-width: vr.$breakpoint-md) {
+        padding: 8px 16px;
+        margin-top: 8px;
+        font-size: 9px;
+      }
+    }
     }
   }
 }
