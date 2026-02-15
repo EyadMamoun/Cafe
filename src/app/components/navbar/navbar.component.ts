@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -11,6 +11,12 @@ export class NavbarComponent implements OnInit {
   mobileView: boolean = false;
   menuButtonView: boolean = true;
   megaMenuView: boolean = false;
+  isScrolled = false;
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    this.isScrolled = window.scrollY > 50;
+  }
 
   ngOnInit(): void {
     this.screenWidth = window.innerWidth;

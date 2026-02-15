@@ -8,11 +8,13 @@
 
   .navbar-container {
     width: 100%;
+    background-color: transparent;
     z-index: 1;
-    @include mx.position(absolute);
+    transition: background-color 0.3s ease;
+    @include mx.position(fixed, 0);
 
     .container {
-      padding: 24px 12px;
+      padding: 8px 12px;
       color: cv.$white-color;
 
       .col-3 {
@@ -21,7 +23,7 @@
       }
       
       .navbar-alignement{
-        gap: 50px;
+        gap: 40px;
         font-size: large;
         @include mx.flex-display();
 
@@ -32,13 +34,33 @@
       }
       
       .icon-alignment{
-        @include mx.flex-display(row, start, center);
+        margin-top: vr.$margin-4;
+        @include mx.flex-display(row, space-around, center);
         
         i{
           font-size: 23px;
         }
+
+        .cart-container{
+          @include mx.position();
+
+          .cart-counter{
+            width: 13px;
+            height: 13px;
+            background-color: cv.$BG-dark-orange;
+            border-radius: 50%;
+            font-size: xx-small;
+            @include mx.flex-display();
+            @include mx.position(absolute, auto, auto, 19px, 19px);
+          }
+        }
+
       }
     }
+  }
+
+  .navbar-container.scrolled {
+    background-color: cv.$text-brown;
   }
   
   .mobile-view {
