@@ -1,58 +1,32 @@
-<div class="container pt-5">
+<div class="container py-5">
     <div class="row align-items-center bg-white py-4 border rounded">
-        <!-- <div class="col-12 text-center fs-2 mb-3">
-            <span>COFFEE MENU</span>
-        </div>
-        <div class="col-6 d-flex mb-2">
-            <div class="ccc me-3">
-                <app-product-card [imgSrc]="'assets/Images/Salted_caramel.jpg'" [showPrice]="false" />
-            </div>
-            <div class="product-description">
-                <div class="d-flex flex-column">
-                    <span class="fs-3">Iced Salted Caramel</span>
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. ero, Lorem ipsum dolor 
-                        sit amet consectetur adipisicing elit. ero.</span>
-                </div>
-                <div class="w-100 d-flex justify-content-between">
-                    <span class="fw-bold fs-4">EGP 160</span>
-                    <button class="btn btn-outline-danger">Order Now</button>
-                </div>
-            </div>
-        </div> -->
         <span class="header-style">COFFEE MENU</span>
+
+        <div class="stepper">
+            <div class="stepper-option" [class.stepper-active-option]="isHotDrinks" (click)="viewHotDrinks()">Hot Drinks
+            </div>
+            <div class="stepper-option" [class.stepper-active-option]="isColdDrinks" (click)="viewColdDrinks()">Cold
+                Drinks</div>
+        </div>
+
         <div class="menu-container">
+            @for (item of hotCoffee; track item.id) {
             <div class="menu-option">
                 <div class="img-style">
-                    <app-product-card [imgSrc]="'assets/Images/Salted_caramel.jpg'" [showPrice]="false" />
+                    <app-product-card [imgSrc]="item.productImg" [showPrice]="false" />
                 </div>
                 <div class="product-description">
                     <div class="d-flex flex-column">
-                        <span class="fs-3">Iced Salted Caramel</span>
-                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. ero, Lorem ipsum dolor 
-                            sit amet consectetur adipisicing elit. ero.</span>
+                        <span class="fs-4">{{item.productName}}</span>
+                        <span>{{item.productDescription}}</span>
                     </div>
                     <div class="w-100 d-flex justify-content-between">
-                        <span class="fw-bold fs-4">EGP 160</span>
+                        <span class="fw-bold fs-5">{{'EGP ' + item.productPrice}}</span>
                         <button class="btn btn-style">Order Now</button>
                     </div>
                 </div>
             </div>
-            <div class="menu-option">
-                <div class="img-style">
-                    <app-product-card [imgSrc]="'assets/Images/Salted_caramel.jpg'" [showPrice]="false" />
-                </div>
-                <div class="product-description">
-                    <div class="d-flex flex-column">
-                        <span class="fs-3">Iced Salted Caramel</span>
-                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. ero, Lorem ipsum dolor 
-                            sit amet consectetur adipisicing elit. ero.</span>
-                    </div>
-                    <div class="w-100 d-flex justify-content-between">
-                        <span class="fw-bold fs-4">EGP 160</span>
-                        <button class="btn btn-style">Order Now</button>
-                    </div>
-                </div>
-            </div>
+            }
         </div>
     </div>
 </div>

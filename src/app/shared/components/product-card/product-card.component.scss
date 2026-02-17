@@ -49,4 +49,18 @@
       }
     }
   }
+
+  .counter{
+    margin-bottom: 4px;
+    @include mx.flex-display();
+
+    .counter-btn{
+      padding: 0 7px !important;
+      font-size: large;
+      &:hover{
+        background-color: cv.$text-brown;
+        color: white;
+      }
+    }
+  }
 }

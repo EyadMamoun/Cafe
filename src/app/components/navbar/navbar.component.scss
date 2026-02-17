@@ -24,7 +24,7 @@
       
       .navbar-alignement{
         gap: 40px;
-        font-size: large;
+        font-size: medium;
         @include mx.flex-display();
 
         a {
@@ -57,6 +57,10 @@
 
       }
     }
+  }
+
+  .solid-navbar{
+    background-color: cv.$text-brown;
   }
 
   .navbar-container.scrolled {

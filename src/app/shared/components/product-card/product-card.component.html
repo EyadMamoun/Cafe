@@ -5,9 +5,16 @@
     <span class="header">{{productName}}</span>
     <span class="description">{{productDescription}}</span>
   </div>
-    <div class="product-pricing">
+  @if(isCounter){
+  <div class="counter">
+    <button class="btn counter-btn" (click)="removeItemBtn()">-</button>
+    <span class="px-2 fs-5">{{counter}}</span>
+    <button class="btn counter-btn" (click)="addItemBtn()">+</button>
+  </div>
+  }
+  <div class="product-pricing">
     <span class="price">{{"EGP " + productPrice}}</span>
-    <button class="btn btn-style">Order Now</button>
+    <button class="btn btn-style" (click)="orderBtnClick()">{{btnState}}</button>
   </div>
   }
 </div>

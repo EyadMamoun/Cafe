@@ -1,8 +1,11 @@
+import { NgClass } from '@angular/common';
 import { Component, HostListener, OnInit } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
+import { filter } from 'rxjs';
 
 @Component({
   selector: 'app-navbar',
-  imports: [],
+  imports: [NgClass],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss',
 })
@@ -12,15 +15,23 @@ export class NavbarComponent implements OnInit {
   menuButtonView: boolean = true;
   megaMenuView: boolean = false;
   isScrolled = false;
+  isSolid = false;
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
     this.isScrolled = window.scrollY > 50;
   }
 
+  constructor(private _router: Router) {}
+
   ngOnInit(): void {
     this.screenWidth = window.innerWidth;
     this.mobileView = this.screenWidth <= 768 ? true : false;
+    this._router.events
+      .pipe(filter((event) => event instanceof NavigationEnd))
+      .subscribe((event: NavigationEnd) => {
+        this.isSolid = !event.urlAfterRedirects.includes('/home');
+      });
   }
 
   onNavbarClick() {
