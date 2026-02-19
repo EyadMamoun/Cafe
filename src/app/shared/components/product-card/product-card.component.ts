@@ -16,11 +16,11 @@ export class ProductCardComponent {
 
   isCounter: boolean = false;
   counter: number = 1;
-  btnState: 'Order Now' | 'Confirm' = 'Order Now';
+  btnState: 'Order Now' | 'Add to cart' = 'Order Now';
 
   orderBtnClick() {
     this.isCounter = true;
-    this.btnState = 'Confirm';
+    this.btnState = 'Add to cart';
   }
 
   addItemBtn() {

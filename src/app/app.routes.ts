@@ -4,12 +4,14 @@ import { CoffeeMenuComponent } from './components/coffee-menu/coffee-menu.compon
 import { CartComponent } from './components/cart/cart.component';
 import { DessertMenuComponent } from './components/dessert-menu/dessert-menu.component';
 import { Error404Component } from './components/error-404/error-404.component';
+import { ShopComponent } from './components/shop/shop.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'coffee-menu', component: CoffeeMenuComponent },
   { path: 'dessert-menu', component: DessertMenuComponent },
+  { path: 'shop', component: ShopComponent },
   { path: 'cart', component: CartComponent },
   { path: '404', component: Error404Component },
 ];

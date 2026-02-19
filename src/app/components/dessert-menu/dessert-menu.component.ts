@@ -12,35 +12,35 @@ export class DessertMenuComponent {
   dessert: Product[] = [
     {
       id: 5,
-      productImg: 'assets/Images/Lotus_Cheesecake.jpg',
-      productName: 'Lotus Cheesecake',
+      productImg: 'assets/Images/Classic_Tiramisu.jpg',
+      productName: 'Classic Tiramisu',
       productDescription:
-        'Creamy cheesecake topped with Lotus biscuit crumble.',
-      productPrice: 160,
+        'Espresso-soaked ladyfingers with mascarpone cream and cocoa.',
+      productPrice: 220,
     },
     {
       id: 6,
-      productImg: 'assets/Images/Lotus_Cheesecake.jpg',
-      productName: 'Lotus Cheesecake',
+      productImg: 'assets/Images/Classic_Tiramisu.jpg',
+      productName: 'Classic Tiramisu',
       productDescription:
-        'Creamy cheesecake topped with Lotus biscuit crumble.',
-      productPrice: 160,
+        'Espresso-soaked ladyfingers with mascarpone cream and cocoa.',
+      productPrice: 220,
     },
     {
       id: 7,
-      productImg: 'assets/Images/Lotus_Cheesecake.jpg',
-      productName: 'Lotus Cheesecake',
+      productImg: 'assets/Images/Classic_Tiramisu.jpg',
+      productName: 'Classic Tiramisu',
       productDescription:
-        'Creamy cheesecake topped with Lotus biscuit crumble.',
-      productPrice: 160,
+        'Espresso-soaked ladyfingers with mascarpone cream and cocoa.',
+      productPrice: 220,
     },
     {
       id: 8,
-      productImg: 'assets/Images/Lotus_Cheesecake.jpg',
-      productName: 'Lotus Cheesecake',
+      productImg: 'assets/Images/Classic_Tiramisu.jpg',
+      productName: 'Classic Tiramisu',
       productDescription:
-        'Creamy cheesecake topped with Lotus biscuit crumble.',
-      productPrice: 160,
+        'Espresso-soaked ladyfingers with mascarpone cream and cocoa.',
+      productPrice: 220,
     },
   ];
 }
