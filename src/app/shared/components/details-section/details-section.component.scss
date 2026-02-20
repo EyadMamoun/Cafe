@@ -1,0 +1,41 @@
+@use "colors" as cv;
+@use "mixins" as mx;
+
+.container{
+    margin: 20px 0;
+
+    .img-section{
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .details-section{
+        background-color: #f1f0ee;
+        padding: 16px;
+        border-radius: 8px;
+
+        .header{
+            width: fit-content;
+            margin-bottom: 16px;
+            @include mx.flex-display(column, center, center);
+
+            .line{
+                width: 25%;
+                height: 3px;
+                background-color: cv.$text-brown;
+            }
+        }
+
+        .content{
+            @include mx.flex-display(row, flex-start, flex-start);
+
+            .dot{
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: black;
+                margin-right: 5px;
+            }
+        }
+    }
+}

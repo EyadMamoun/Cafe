@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Icon, Product } from '../../types/products.type';
 import { ProductCardComponent } from '../../shared/components/product-card/product-card.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -13,7 +14,7 @@ export class HomeComponent {
   specialDesserts: Product[];
   icons: Icon[];
 
-  constructor() {
+  constructor(private readonly _router: Router) {
     this.specialCoffee = [
       {
         id: 1,
@@ -100,5 +101,9 @@ export class HomeComponent {
         iconDescription: 'Dessert',
       },
     ];
+  }
+
+  navigateToShop() {
+    this._router.navigateByUrl('/shop');
   }
 }
