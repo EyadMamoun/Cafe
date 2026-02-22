@@ -1,6 +1,11 @@
 <div class="container">
     <div class="row sub-container">
         <span class="header-style">ABOUT US</span>
-        <app-details-section></app-details-section>
+        <app-details-section [contentTitle]="'Our Story'" [content]="ourStory"
+            [imgURL]="'assets/Images/coffee_kiosk.jpg'" [isImgLeft]="true" />
+        <app-details-section class="sections-spacing" [contentTitle]="'Our Mission'" [content]="ourMission"
+            [imgURL]="'assets/Images/coffee_machine.jpg'" [isImgRight]="true" />
+        <app-details-section [contentTitle]="'Our Vision'" [content]="ourVision"
+            [imgURL]="'assets/Images/three_coffee_cups.jpg'" [isImgLeft]="true" />
     </div>
 </div>

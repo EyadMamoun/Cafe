@@ -1,18 +1,30 @@
 <div class="container">
     <div class="row">
+        @if(isImgLeft){
         <div class="col-3 offset-1">
-            <img class="img-section" src="assets/Images/coffee_kiosk.jpg" alt="coffee kiosk">
+            <div class="img-bg">
+                <img class="img-section" [src]="imgURL" alt="coffee">
+            </div>
         </div>
+        }
         <div class="col-6 offset-1 details-section">
             <div class="header">
-                <h3>Our Story</h3>
+                <h3>{{contentTitle}}</h3>
                 <div class="line"></div>
             </div>
+            @for(item of content; track $index){
             <div class="content">
                 <div class="dot"></div>
-                <span>Founded in 1975 in Toronto, Canada, Second Cup started as a small kiosk in a shopping mall selling
-                    whole bean coffee.</span>
+                <span>{{item}}</span>
+            </div>
+            }
+        </div>
+        @if(isImgRight){
+        <div class="col-3 offset-1">
+            <div class="img-bg">
+                <img class="img-section" [src]="imgURL" alt="coffee kiosk">
             </div>
         </div>
+        }
     </div>
 </div>
