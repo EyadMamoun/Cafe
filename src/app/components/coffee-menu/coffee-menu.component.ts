@@ -20,7 +20,7 @@ export class CoffeeMenuComponent {
   hotCoffee: Product[] = [
     {
       id: 1,
-      productImg: 'assets/Images/Turkish_Coffee.jpg',
+      productImg: 'assets/Images/Turkish_Coffee.png',
       productName: 'Turkish Coffee',
       productDescription:
         'Finely ground coffee beans boiled and served in a cup trr rgesvegves.',
@@ -28,7 +28,7 @@ export class CoffeeMenuComponent {
     },
     {
       id: 2,
-      productImg: 'assets/Images/Turkish_Coffee.jpg',
+      productImg: 'assets/Images/Turkish_Coffee.png',
       productName: 'Turkish Coffee',
       productDescription:
         'Finely ground coffee beans boiled and served in a cup trr rgesvegves.',
@@ -36,7 +36,7 @@ export class CoffeeMenuComponent {
     },
     {
       id: 3,
-      productImg: 'assets/Images/Turkish_Coffee.jpg',
+      productImg: 'assets/Images/Turkish_Coffee.png',
       productName: 'Turkish Coffee',
       productDescription:
         'Finely ground coffee beans boiled and served in a cup trr rgesvegves.',
@@ -44,7 +44,7 @@ export class CoffeeMenuComponent {
     },
     {
       id: 4,
-      productImg: 'assets/Images/Turkish_Coffee.jpg',
+      productImg: 'assets/Images/Turkish_Coffee.png',
       productName: 'Turkish Coffee',
       productDescription:
         'Finely ground coffee beans boiled and served in a cup trr rgesvegves.',
@@ -54,7 +54,7 @@ export class CoffeeMenuComponent {
   icedCoffee: Product[] = [
     {
       id: 1,
-      productImg: 'assets/Images/Salted_caramel.jpg',
+      productImg: 'assets/Images/Salted_caramel.png',
       productName: 'Iced Salted Caramel',
       productDescription:
         'Caramel cream espresso with whipped cream and salted sugar.',
@@ -62,7 +62,7 @@ export class CoffeeMenuComponent {
     },
     {
       id: 2,
-      productImg: 'assets/Images/Salted_caramel.jpg',
+      productImg: 'assets/Images/Salted_caramel.png',
       productName: 'Iced Salted Caramel',
       productDescription:
         'Caramel cream espresso with whipped cream and salted sugar.',
@@ -70,7 +70,7 @@ export class CoffeeMenuComponent {
     },
     {
       id: 3,
-      productImg: 'assets/Images/Salted_caramel.jpg',
+      productImg: 'assets/Images/Salted_caramel.png',
       productName: 'Iced Salted Caramel',
       productDescription:
         'Caramel cream espresso with whipped cream and salted sugar.',
@@ -78,7 +78,7 @@ export class CoffeeMenuComponent {
     },
     {
       id: 4,
-      productImg: 'assets/Images/Salted_caramel.jpg',
+      productImg: 'assets/Images/Salted_caramel.png',
       productName: 'Iced Salted Caramel',
       productDescription:
         'Caramel cream espresso with whipped cream and salted sugar.',

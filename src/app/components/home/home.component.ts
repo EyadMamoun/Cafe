@@ -18,14 +18,14 @@ export class HomeComponent {
     this.specialCoffee = [
       {
         id: 1,
-        productImg: 'assets/Images/Turkish_Coffee.jpg',
+        productImg: 'assets/Images/Turkish_Coffee.png',
         productName: 'Turkish Coffee',
         productDescription: 'Finely ground coffee boiled and served in a cup.',
         productPrice: 70,
       },
       {
         id: 2,
-        productImg: 'assets/Images/Latte.jpg',
+        productImg: 'assets/Images/Latte.png',
         productName: 'Iced Spanish Latte',
         productDescription:
           'A Latin twist of rich espresso and special milk with a sweet finish.',
@@ -33,7 +33,7 @@ export class HomeComponent {
       },
       {
         id: 3,
-        productImg: 'assets/Images/Salted_caramel.jpg',
+        productImg: 'assets/Images/Salted_caramel.png',
         productName: 'Iced Salted Caramel',
         productDescription:
           'Caramel cream espresso with whipped cream and salted sugar.',
@@ -52,7 +52,7 @@ export class HomeComponent {
     this.specialDesserts = [
       {
         id: 5,
-        productImg: 'assets/Images/Classic_Tiramisu.jpg',
+        productImg: 'assets/Images/Classic_Tiramisu.png',
         productName: 'Classic Tiramisu',
         productDescription:
           'Espresso-soaked ladyfingers with mascarpone cream and cocoa.',
@@ -60,7 +60,7 @@ export class HomeComponent {
       },
       {
         id: 6,
-        productImg: 'assets/Images/Donuts.jpg',
+        productImg: 'assets/Images/Donuts.png',
         productName: 'Donuts',
         productDescription:
           'Golden, tender donut crafted with rich, sweet glaze.',
@@ -68,14 +68,14 @@ export class HomeComponent {
       },
       {
         id: 7,
-        productImg: 'assets/Images/Cinnamon_Churros.jpg',
+        productImg: 'assets/Images/Cinnamon_Churros.png',
         productName: 'Cinnamon Churros',
         productDescription: 'Crispy churros coated in cinnamon sugar.',
         productPrice: 190,
       },
       {
         id: 8,
-        productImg: 'assets/Images/Lotus_Cheesecake.jpg',
+        productImg: 'assets/Images/Lotus_Cheesecake.png',
         productName: 'Lotus Cheesecake',
         productDescription:
           'Creamy cheesecake topped with Lotus biscuit crumble.',

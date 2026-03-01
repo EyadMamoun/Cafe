@@ -12,7 +12,7 @@ export class DessertMenuComponent {
   dessert: Product[] = [
     {
       id: 5,
-      productImg: 'assets/Images/Classic_Tiramisu.jpg',
+      productImg: 'assets/Images/Classic_Tiramisu.png',
       productName: 'Classic Tiramisu',
       productDescription:
         'Espresso-soaked ladyfingers with mascarpone cream and cocoa.',
@@ -20,7 +20,7 @@ export class DessertMenuComponent {
     },
     {
       id: 6,
-      productImg: 'assets/Images/Classic_Tiramisu.jpg',
+      productImg: 'assets/Images/Classic_Tiramisu.png',
       productName: 'Classic Tiramisu',
       productDescription:
         'Espresso-soaked ladyfingers with mascarpone cream and cocoa.',
@@ -28,7 +28,7 @@ export class DessertMenuComponent {
     },
     {
       id: 7,
-      productImg: 'assets/Images/Classic_Tiramisu.jpg',
+      productImg: 'assets/Images/Classic_Tiramisu.png',
       productName: 'Classic Tiramisu',
       productDescription:
         'Espresso-soaked ladyfingers with mascarpone cream and cocoa.',
@@ -36,7 +36,7 @@ export class DessertMenuComponent {
     },
     {
       id: 8,
-      productImg: 'assets/Images/Classic_Tiramisu.jpg',
+      productImg: 'assets/Images/Classic_Tiramisu.png',
       productName: 'Classic Tiramisu',
       productDescription:
         'Espresso-soaked ladyfingers with mascarpone cream and cocoa.',
