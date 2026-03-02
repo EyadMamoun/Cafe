@@ -1,0 +1,36 @@
+@use "variables" as vr;
+@use "colors" as cv;
+
+.container{
+    padding: 48px 0;
+
+    .row{
+        margin-top: 100px;
+        padding-bottom: 30px;
+        border-radius: 8px;
+        background-color: white;
+
+        .header-style {
+            text-align: center;
+            font-size: 27px;
+            font-weight: 700;
+            color: cv.$text-brown;
+            margin: 25px 0;
+
+        }
+
+        .col-1{
+            margin-top: 37px;
+        }
+
+        .login-btn{
+            border: 1px solid cv.$text-brown;
+            width: 100%;
+        }
+
+        .login-btn:hover{
+            background-color: cv.$text-brown;
+            color: white;
+        }
+    }   
+}

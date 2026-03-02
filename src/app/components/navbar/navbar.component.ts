@@ -43,4 +43,8 @@ export class NavbarComponent implements OnInit {
     this.menuButtonView = !this.menuButtonView;
     this.megaMenuView = !this.megaMenuView;
   }
+
+  goToCart() {
+    this._router.navigateByUrl('/cart');
+  }
 }

@@ -42,6 +42,7 @@
         }
 
         .cart-container{
+          cursor: pointer;
           @include mx.position();
 
           .cart-counter{
