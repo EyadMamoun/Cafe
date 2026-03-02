@@ -72,37 +72,39 @@
     @include mx.flex-display(row, space-between, center);
 
     .mobile-navbar {
-    width: 30px;
-    height: 26px;
-    padding: 1px;
-    border: 1px solid cv.$text-whitesmoke;
-    border-radius: 3px;
-    z-index: 1;
-    @include mx.position(absolute, 15px, 10px);
-    @include mx.flex-display(column, space-evenly, center);
+      width: 30px;
+      height: 26px;
+      padding: 1px;
+      border: 1px solid cv.$text-whitesmoke;
+      border-radius: 3px;
+      z-index: 1;
+      @include mx.position(absolute, 15px, 10px);
+      @include mx.flex-display(column, space-evenly, center);
     
-    .straight-lines {
-      width: 75%;
-      height: 3px;
-      background-color: cv.$text-whitesmoke;
-      border-radius: 50px;
+      .straight-lines {
+        width: 75%;
+        height: 3px;
+        background-color: cv.$text-whitesmoke;
+        border-radius: 50px;
+      }
     }
   }
-  }
+
   .mobile-menu {
     background-color: cv.$white-color;
     border-radius: 8px;
     @include mx.flex-display(column);
 
-    span {
+    a {
       width: 100%;
       text-align: center;
       color: cv.$text-brown;
       padding: 11px;
+      text-decoration: none;
       border: 1px solid rgba(100, 100, 100, 0.1);
     }
 
-    span:hover {
+    a:hover {
       background-color: cv.$text-brown;
       color: cv.$text-whitesmoke;
     }

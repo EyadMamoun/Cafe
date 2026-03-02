@@ -2,6 +2,15 @@
 @use "colors" as cv;
 @use "mixins" as mx;
 
+.bg-img
+{
+    height: 80vh;
+    background-image: url(/../assets/Images/Cafe_background.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
 .header{
     margin: 40px 0;
     @include mx.flex-display();
