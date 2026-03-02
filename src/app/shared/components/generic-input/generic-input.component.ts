@@ -8,4 +8,5 @@ import { Component, Input } from '@angular/core';
 })
 export class GenericInputComponent {
   @Input() label: string = '';
+  @Input() inputType: 'text' | 'number' | 'email' = 'text';
 }

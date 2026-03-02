@@ -15,6 +15,27 @@
             font-weight: 700;
             color: cv.$text-brown;
             margin: 25px 0;
+
+        }
+
+        .col-1{
+            margin-top: 37px;
+        }
+
+        .login-btn{
+            border: 1px solid cv.$text-brown;
+            width: 100%;
+        }
+
+        .login-btn:hover{
+            background-color: cv.$text-brown;
+            color: white;
+        }
+
+        .disclamer{
+            margin-bottom: 90px;
+            font-size: small;
+            font-weight: 500;
         }
     }   
 }

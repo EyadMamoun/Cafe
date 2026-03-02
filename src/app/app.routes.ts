@@ -7,6 +7,7 @@ import { Error404Component } from './components/error-404/error-404.component';
 import { ShopComponent } from './components/shop/shop.component';
 import { AboutComponent } from './components/about/about.component';
 import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -16,6 +17,7 @@ export const routes: Routes = [
   { path: 'shop', component: ShopComponent },
   { path: 'about', component: AboutComponent },
   { path: 'login', component: LoginComponent },
+  { path: 'register', component: RegisterComponent },
   { path: 'cart', component: CartComponent },
   { path: '404', component: Error404Component },
 ];
