@@ -1,5 +1,6 @@
 @use "mixins" as mx;
 @use "colors" as cv;
+@use "variables" as vr;
 
 .row {
     margin-top: 100px;
@@ -10,6 +11,9 @@
         .item-positioning{
             width: 50%;
             @include mx.flex-display();
+            @media (max-width: vr.$breakpoint-md) {
+                width: 100%;
+            }
         }
     }
 

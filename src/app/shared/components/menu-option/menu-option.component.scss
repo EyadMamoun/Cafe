@@ -1,5 +1,6 @@
 @use "mixins" as mx;
 @use "colors" as cv;
+@use "variables" as vr;
 
     .menu-option {
         width: 84%;
@@ -9,6 +10,17 @@
         .img-style {
             width: 30%;
             margin-right: 7px;
+            background-color: #f1f0ee;
+            padding: 8px;
+            border-radius: 8px;
+            @media (max-width: vr.$breakpoint-md){
+              width: 50%;
+            }
+
+            img{
+              width: 100%;
+              border-radius: 8px;
+            }
         }
 
         .product-description {
@@ -16,11 +28,37 @@
             border-radius: 8px;
             padding: 10px;
             @include mx.flex-display(column, space-between, start);
+
+            .product-title{
+              font-size: x-large;
+              @media (max-width: vr.$breakpoint-md){
+                font-size: medium;
+              }
+            }
+
+            .description{
+              font-size: medium;
+              margin-bottom: 8px;
+              @media (max-width: vr.$breakpoint-md){
+                font-size: small;
+              }
+            }
             
             .btn-style {
                 font-size: 14px;
                 background-color: cv.$text-brown;
                 color: white;
+                @media (max-width: vr.$breakpoint-md){
+                font-size: 10px;
+              }
+            }
+
+            .price{
+              font-size: x-large;
+              font-weight: 600;
+              @media (max-width: vr.$breakpoint-md){
+                font-size: medium;
+              }
             }
 
             .counter{
