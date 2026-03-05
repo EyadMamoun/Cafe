@@ -112,4 +112,8 @@ export class HomeComponent implements OnInit {
   navigateToShop() {
     this._router.navigateByUrl('/shop');
   }
+
+  onOrder() {
+    this._router.navigateByUrl('/coffee-menu');
+  }
 }

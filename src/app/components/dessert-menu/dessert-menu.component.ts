@@ -14,32 +14,28 @@ export class DessertMenuComponent {
       id: 5,
       productImg: 'assets/Images/Classic_Tiramisu.png',
       productName: 'Classic Tiramisu',
-      productDescription:
-        'Espresso-soaked ladyfingers with mascarpone cream and cocoa.',
+      productDescription: 'Espresso ladyfingers with mascarpone and cocoa.',
       productPrice: 220,
     },
     {
       id: 6,
       productImg: 'assets/Images/Classic_Tiramisu.png',
       productName: 'Classic Tiramisu',
-      productDescription:
-        'Espresso-soaked ladyfingers with mascarpone cream and cocoa.',
+      productDescription: 'Espresso ladyfingers with mascarpone and cocoa.',
       productPrice: 220,
     },
     {
       id: 7,
       productImg: 'assets/Images/Classic_Tiramisu.png',
       productName: 'Classic Tiramisu',
-      productDescription:
-        'Espresso-soaked ladyfingers with mascarpone cream and cocoa.',
+      productDescription: 'Espresso ladyfingers with mascarpone and cocoa.',
       productPrice: 220,
     },
     {
       id: 8,
       productImg: 'assets/Images/Classic_Tiramisu.png',
       productName: 'Classic Tiramisu',
-      productDescription:
-        'Espresso-soaked ladyfingers with mascarpone cream and cocoa.',
+      productDescription: 'Espresso ladyfingers with mascarpone and cocoa.',
       productPrice: 220,
     },
   ];

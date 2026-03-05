@@ -57,7 +57,7 @@ export class CoffeeMenuComponent {
       productImg: 'assets/Images/Salted_caramel.png',
       productName: 'Iced Salted Caramel',
       productDescription:
-        'Caramel cream espresso with whipped cream and salted sugar.',
+        'Caramel espresso with whipped cream and salted sugar.',
       productPrice: 180,
     },
     {
@@ -65,7 +65,7 @@ export class CoffeeMenuComponent {
       productImg: 'assets/Images/Salted_caramel.png',
       productName: 'Iced Salted Caramel',
       productDescription:
-        'Caramel cream espresso with whipped cream and salted sugar.',
+        'Caramel espresso with whipped cream and salted sugar.',
       productPrice: 180,
     },
     {
@@ -73,7 +73,7 @@ export class CoffeeMenuComponent {
       productImg: 'assets/Images/Salted_caramel.png',
       productName: 'Iced Salted Caramel',
       productDescription:
-        'Caramel cream espresso with whipped cream and salted sugar.',
+        'Caramel espresso with whipped cream and salted sugar.',
       productPrice: 180,
     },
     {
@@ -81,7 +81,7 @@ export class CoffeeMenuComponent {
       productImg: 'assets/Images/Salted_caramel.png',
       productName: 'Iced Salted Caramel',
       productDescription:
-        'Caramel cream espresso with whipped cream and salted sugar.',
+        'Caramel espresso with whipped cream and salted sugar.',
       productPrice: 180,
     },
   ];
