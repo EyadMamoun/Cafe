@@ -8,11 +8,11 @@
             <span class="description">{{menuItems.productDescription}}</span>
         </div>
         <div class="w-100 d-flex justify-content-between">
-            <span class="price">{{'EGP ' + menuItems.productPrice}}</span>
+            <span class="price">{{'LE ' + menuItems.productPrice}}</span>
             @if(isCounter){
             <div class="counter">
                 <button class="btn counter-btn" (click)="removeItemBtn()">-</button>
-                <span class="px-2 fs-5">{{counter}}</span>
+                <span class="counter-number">{{counter}}</span>
                 <button class="btn counter-btn" (click)="addItemBtn()">+</button>
             </div>
             }

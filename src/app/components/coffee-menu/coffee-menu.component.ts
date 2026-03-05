@@ -23,7 +23,7 @@ export class CoffeeMenuComponent {
       productImg: 'assets/Images/Turkish_Coffee.png',
       productName: 'Turkish Coffee',
       productDescription:
-        'Finely ground coffee beans boiled and served in a cup trr rgesvegves.',
+        'Finely ground coffee beans boiled and served in a cup.',
       productPrice: 70,
     },
     {
@@ -31,7 +31,7 @@ export class CoffeeMenuComponent {
       productImg: 'assets/Images/Turkish_Coffee.png',
       productName: 'Turkish Coffee',
       productDescription:
-        'Finely ground coffee beans boiled and served in a cup trr rgesvegves.',
+        'Finely ground coffee beans boiled and served in a cup.',
       productPrice: 70,
     },
     {
@@ -39,7 +39,7 @@ export class CoffeeMenuComponent {
       productImg: 'assets/Images/Turkish_Coffee.png',
       productName: 'Turkish Coffee',
       productDescription:
-        'Finely ground coffee beans boiled and served in a cup trr rgesvegves.',
+        'Finely ground coffee beans boiled and served in a cup.',
       productPrice: 70,
     },
     {
@@ -47,7 +47,7 @@ export class CoffeeMenuComponent {
       productImg: 'assets/Images/Turkish_Coffee.png',
       productName: 'Turkish Coffee',
       productDescription:
-        'Finely ground coffee beans boiled and served in a cup trr rgesvegves.',
+        'Finely ground coffee beans boiled and served in a cup.',
       productPrice: 70,
     },
   ];

@@ -72,6 +72,18 @@
                   background-color: cv.$text-brown;
                   color: white;
                 }
+                @media (max-width: vr.$breakpoint-md) {
+                  padding: 0 5px !important;
+                  font-size: medium;
+                }
+              }
+
+              .counter-number{
+                font-size: 20px;
+                padding: 0 6px;
+                @media (max-width: vr.$breakpoint-md){
+                  font-size: 16px;
+                }
               }
             }
         }

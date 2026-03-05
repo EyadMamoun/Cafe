@@ -40,7 +40,7 @@
         font-size: 20px;
         margin-right: 14px;
         @media (max-width: vr.$breakpoint-md) {
-          font-size: 16px;
+          font-size: 14px;
           padding: 4px;
           margin-right: 6px;
         }
@@ -55,6 +55,18 @@
           &:hover{
             background-color: cv.$text-brown;
             color: white;
+          }
+          @media (max-width: vr.$breakpoint-md){
+            padding: 0 5px !important;
+            font-size: medium;
+          }
+        }
+
+        .counter{
+          font-size: 20px;
+          padding: 0 8px;
+          @media (max-width: vr.$breakpoint-md){
+            font-size: 16px;
           }
         }
       }   

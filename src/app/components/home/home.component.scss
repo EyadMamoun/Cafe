@@ -42,9 +42,9 @@
           font-style: normal;
           font-size: 40px;
           margin-bottom: 15px;
-  
           @media (max-width: vr.$breakpoint-md) {
             font-size: 20px;
+            margin-bottom: 8px;
           }
         }
   
@@ -95,6 +95,9 @@
     .icon-card {
       margin: 50px 0;
       @include mx.flex-display(column);
+      @media (max-width: vr.$breakpoint-md) {
+        margin: 40px 0;
+      }
 
       img {
         width: 25%;
@@ -144,7 +147,7 @@
       @media (max-width: vr.$breakpoint-md) {
         padding: 8px 13px;
         margin-top: 8px;
-        font-size: 9px;
+        font-size: 8px;
       }
     }
     }
